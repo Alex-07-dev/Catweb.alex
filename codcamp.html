@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://logodix.com/logo/1658790.png" type="image/x-icon">
+    <title>Cat Photos App</title>
+    <link rel="stylesheet" href="codecamp.css">
+</head>
+<body>
+    <h1>Cat Photos App</h1>
+    <h2>Cat Photos</h2>
+    
+    <div class="container">
+        <p>Everyone loves <a href="https://www.google.com/search?sca_esv=d41d77eb53f75a2f&rlz=1C1GEWG_enIN1140IN1140&q=cute+cat&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBsxayPSIAqObp_AgjkUGqel3rTRMIJGV_ECIUB00muput9Zp8VMKUi0ZjqPs3JlrgPeFrAnFlUitTiL3WcJlFn10ZVAeuxL5fSn-ULNu9lz3DIW3cy7rkKNmgHapdAFAoBFSl5-LQE_swXRSgVvZGy87KiusPiw1DSGvVAMCLf6f2K4DEg&sa=X&ved=2ahUKEwjDk67P2puNAxWVUGcHHZbKGFgQtKgLegQIExAB&biw=1396&bih=663&dpr=1.38">cute cats</a> online!</p>
+        <p>See more <a href="EgNpbWciBCBjYXQyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBhAAGAcYHjIGEAAYBxgeMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgYQABgHGB4yBhAAGAcYHkjthAFQ7XhYon1wAngAkAEAmAGaBKABtQ2qAQkwLjEuMi41LTK4AQPIAQD4AQGYAgOgAr0EwgIIEAAYgAQYsQPCAgUQABiABJgDAIgGAZIHBTIuNC0xoAfoGrIHAzQtMbgHnAQ">cat photos</a> in our gallery.</p>
+    </div>
+
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/18/4b/97/184b973611e8456b4d6e384795047123.jpg" alt="cat">
+        <img src="https://i.pinimg.com/736x/11/55/f6/1155f6ef85a2fa2b84c7a127f5065897.jpg" alt="cat">
+        <img src="https://i.pinimg.com/736x/d8/55/c6/d855c66f95e9d3babeebd1e88bf4026d.jpg" alt="cat">
+        <img src="https://i.pinimg.com/originals/b6/a6/d5/b6a6d50de7eb36065b98ebd254d46cd5.jpg" alt="cat">
+    </div>
+
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>Catnip</li>
+        <li>Laser pointer</li>
+        <li>Lasagna</li>
+        <li>Cake</li>
+    </ul>
+
+    <div class="gallery">
+        <img src="https://th.bing.com/th/id/OIP.7ilvw-yb12-9A4pub-WKFwHaFj?rs=1&pid=ImgDetMain" alt="lasagna">
+        <img src="https://th.bing.com/th/id/R.ec0b1767ccfe0648b09eb9c8d69343b0?rik=zjx2UHC1%2f4%2bk%2fw&riu=http%3a%2f%2f3.bp.blogspot.com%2f_MtoitE0qODY%2fTRBY54vOqEI%2fAAAAAAAAF4w%2fzatEJfXZwBc%2fs1600%2fIMG_0036.JPG&ehk=aPk3xEWYgEMlZD07Wxm9Ma%2f4qbwx4JPq86cw3RdcYro%3d&risl=&pid=ImgRaw&r=0" alt="lasagna">
+        <img src="https://galbanicheese.com/wp-content/uploads/2016/10/Cheese-Lasagna-72DPI1-e1476892466909-1024x843.jpg" alt="lasagna">
+        <img src="https://th.bing.com/th/id/OIP.3oWoarh4HEd0KKMS7P3HxQHaE8?rs=1&pid=ImgDetMain" alt="lasagna">
+
+    </div>
+    <h3>Things cats hate:</h3>
+    <ol>
+        <li>Flea treatment</li>
+        <li>Thunder</li>
+        <li>Other cats</li>
+        <li>Water</li>
+    </ol>
+
+    <div class="gallery">
+        <img src="https://cats.com/wp-content/uploads/2021/01/cat-flea-drop.jpg" alt="cats playing">
+        <img src="https://static.vecteezy.com/system/resources/previews/046/924/479/non_2x/beautiful-cat-with-thunder-free-photo.jpg" alt="cats playing">
+        <img src="https://www.wallpaperbetter.com/wallpaper/910/153/213/cats-playing-in-the-grass-1080P-wallpaper.jpg" alt="cats playing">
+        <img src="https://uploads-ssl.webflow.com/5bb7a2fc07a756534392cb2b/614b3ed208e3c25d3ce31f60_Pe9S4dqKen-KtR_dG-ADw_0dK2iqgN1IqxYTkzUGeZJSyTZTeTeF0AuzF9pxrk2_HxytFnHu6hLCz9Pf798ETGXETN7uL0WwEUseTDivymf1hRma0jgVeC5FJql_C3XLHcuGwiCL=s0.jpeg" alt="cats playing">
+
+    </div>
+
+ <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery img");
+        
+            images.forEach(img => {
+                img.addEventListener("click", () => {
+                    const overlay = document.createElement("div");
+                    overlay.style.position = "fixed";
+                    overlay.style.top = 0;
+                    overlay.style.left = 0;
+                    overlay.style.width = "100%";
+                    overlay.style.height = "100%";
+                    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+                    overlay.style.display = "flex";
+                    overlay.style.alignItems = "center";
+                    overlay.style.justifyContent = "center";
+                    overlay.style.zIndex = 1000;
+        
+                    const largeImg = document.createElement("img");
+                    largeImg.src = img.src;
+                    largeImg.style.maxWidth = "90%";
+                    largeImg.style.maxHeight = "90%";
+                    largeImg.style.border = "5px solid white";
+                    largeImg.style.borderRadius = "12px";
+                    largeImg.style.boxShadow = "0 0 20px white";
+        
+                    overlay.appendChild(largeImg);
+                    document.body.appendChild(overlay);
+        
+                    overlay.addEventListener("click", () => {
+                        overlay.remove();
+                    });
+                });
+            });
+        });
+        </script>
+<button id="topBtn" title="Go to top">⬆️</button>
+<script>
+    const topBtn = document.getElementById("topBtn");
+    
+    window.onscroll = () => {
+        topBtn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+    
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    </script>
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const facts = [
+            "Cats sleep 70% of their lives.",
+            "A group of cats is called a clowder.",
+            "Cats can rotate their ears 180 degrees.",
+            "The oldest cat lived to 38 years.",
+            "Cats have five toes on front paws, four on the back."
+        ];
+    
+        const factBox = document.createElement("p");
+    
+        factBox.style.fontStyle = "italic";
+        factBox.style.color = "#555";
+        factBox.style.marginTop = "20px";
+        factBox.style.textAlign = "center";
+    
+        document.body.insertBefore(factBox, document.querySelector(".footer"));
+    });
+    
+    </script>
+    <script>
+        const facts = [
+            "Cats sleep for 70% of their lives.",
+            "A group of kittens is called a kindle.",
+            "Cats can jump up to 6 times their length.",
+            "Each cat’s nose print is unique.",
+            "Cats have over 20 muscles that control their ears."
+        ];
+        
+        function showRandomFact() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById("cat-fact").textContent = facts[randomIndex];
+        }
+        </script>
+        <div id="cat-fact-box">
+            <h3>Did You Know?</h3>
+            <p id="cat-fact">Click the button below to learn something cool about cats!</p>
+            <button onclick="showRandomFact()">New Cat Fact</button>
+        </div>
+        <button onclick="changeBackground()" id="colorBtn">Change Background Color</button>
+        <script>
+            function changeBackground() {
+                const colors = ["#ffe4e1", "#fafad2", "#e0ffff", "#f5f5dc", "#ffe0f0"];
+                document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            }
+            </script>
+<script>
+    document.addEventListener('mousemove', function(e) {
+        const paw = document.createElement('div');
+        paw.innerHTML = '🐾';
+        paw.style.position = 'absolute';
+        paw.style.left = (e.pageX + 10) + 'px';
+        paw.style.top = (e.pageY + 10) + 'px';
+        paw.style.fontSize = '20px';
+        paw.style.opacity = 0.8;
+        paw.style.pointerEvents = 'none';
+        document.body.appendChild(paw);
+        setTimeout(() => paw.remove(), 400);
+    });
+    </script>
+      <div class="footer">
+        <p>© 2025 Cat Photos App. a big thanks to Mr. Alex .</p>  
+    </div>                  
+                
+</body>
+</html>
